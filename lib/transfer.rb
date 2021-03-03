@@ -16,6 +16,7 @@ class Transfer
   end 
   
   def execute_transaction
+<<<<<<< HEAD
     if valid? && @sender.balance > @amount && @status == "pending"
       @receiver.deposit(@amount)
       @sender.deposit( @amount * -1 ) 
@@ -33,6 +34,14 @@ class Transfer
       @status = "reversed"
     end
   end
+=======
+    
+  end 
+  
+  def reverse_transfer
+  end 
+  
+>>>>>>> bc6a49e10ec7e16adadc1c0b3a3257edbaa702f9
     
   
 end
